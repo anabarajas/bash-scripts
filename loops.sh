@@ -18,7 +18,7 @@ done
 
 echo "Third while loop:"
 
-while read f
+while read f                # assigns value to var f
 do
   case $f in
 	hello)			echo English	;;
@@ -26,7 +26,7 @@ do
 	gday)			echo Australian	;;
 	bonjour)		echo French		;;
 	"guten tag")	echo German		;;
-	*)				echo Unknown Language: $i
+	*)				echo Unknown Language: $f
 		;;
    esac
 done < myfile
